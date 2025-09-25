@@ -1,0 +1,206 @@
+/* Smooth background & color transitions */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+h1 {
+  margin-bottom: 40px;
+  color: #333;
+  font-size: 36px;
+  text-align: center;
+}
+
+/* Centered Google login button */
+#login-btn {
+  padding: 18px 36px;
+  font-size: 20px;
+  background: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.2s;
+  display: block;
+  margin: 0 auto;
+}
+#login-btn:hover {
+  background: #357ae8;
+}
+
+#task-controls {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Dark mode toggle top-right */
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background 0.5s ease, transform 0.3s ease;
+}
+#theme-toggle:hover {
+  transform: rotate(25deg);
+}
+
+/* Timer display */
+#timer-display {
+  font-weight: bold;
+  font-size: 80px;
+  margin-bottom: 40px;
+  background: #fff;
+  color: #000;
+  padding: 30px 60px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: inline-block;
+  min-width: 260px;
+  text-align: center;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Task Buttons */
+button {
+  width: 100%;
+  max-width: 300px;
+  padding: 18px;
+  margin: 12px auto;
+  font-size: 22px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+}
+
+#start-task {
+  background: #4caf50;
+  color: white;
+}
+#start-task:hover {
+  background: #45a049;
+}
+
+#stop-task {
+  background: #f44336;
+  color: white;
+}
+#stop-task:hover {
+  background: #e53935;
+}
+
+/* Feedback Box */
+#status-message {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  display: none;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+#status-message.success { background: #e8f5e9; color: #2e7d32; border: 1px solid #81c784; }
+#status-message.error { background: #ffebee; color: #c62828; border: 1px solid #ef9a9a; }
+#status-message.info { background: #e3f2fd; color: #1565c0; border: 1px solid #90caf9; }
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 400px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  transition: background 0.5s ease, color 0.5s ease;
+}
+.modal-content h2 { margin-bottom: 20px; font-size: 22px; }
+.modal-content input {
+  width: 95%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.modal-buttons { display: flex; justify-content: space-around; }
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background: #121212;
+  color: #f4f4f4;
+}
+body.dark-mode #timer-display {
+  background: #000;
+  color: #fff;
+}
+body.dark-mode .modal-content {
+  background: #222;
+  color: #fff;
+}
+body.dark-mode #theme-toggle {
+  background: #666;
+  color: #fff;
+}
+
+body.dark.mode h1{
+  background: #222;
+  color: #fff;
+}
+
+/* Footer Styles */
+#app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  border-top: 2px solid;
+  transition: background 0.5s ease, color 0.5s ease, border 0.5s ease;
+}
+
+/* Light mode footer */
+body:not(.dark-mode) #app-footer {
+  background: #fff;
+  color: #333;
+  border-color: #ddd;
+}
+
+/* Dark mode footer */
+body.dark-mode #app-footer {
+  background: #000;
+  color: #ccc;
+  border-color: #666;
+}
