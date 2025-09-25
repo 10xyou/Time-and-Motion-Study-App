@@ -44,9 +44,3 @@ The Timing Motion Study App is simple by design but powerful in practice. Each f
 - Eliminates manual time tracking and reduces administrative workload.  
 - Provides clear insights into workflow efficiency.  
 - Helps employees manage their time more effectively, leading to improved productivity and better work-life balance.  
-
----
-
-## 📄 License  
-
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.  
