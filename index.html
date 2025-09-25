@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timing Motion Study App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4caf50">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="https://apis.google.com/js/api.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Dark mode toggle top-right -->
+  <button id="theme-toggle">🌙</button>
+
+  <h1>Timing Motion Study App</h1>
+
+  <div id="task-controls">
+    <div id="timer-display">00:00</div>
+    <button id="start-task">Start Task</button>
+    <button id="stop-task" style="display:none;">Stop Task</button>
+    <div id="status-message"></div>
+  </div>
+
+  <!-- Modal -->
+  <div id="task-modal" class="modal">
+    <div class="modal-content">
+      <h2>Enter Task Title</h2>
+      <input type="text" id="task-title-input" placeholder="Task title..." />
+      <div class="modal-buttons">
+        <button id="save-task">Save</button>
+        <button id="cancel-task">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="app-footer">
+    Made by Romeo Bartha © 2025
+    <a href="policy.html" target="_blank">Privacy Policy</a> | 
+    <a href="terms.html" target="_blank">Terms of Service</a>
+  </footer>
+</body>
+</html>
