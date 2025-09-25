@@ -1,7 +1,7 @@
 # ⏱️ Timing Motion Study App
 
 The **Timing Motion Study App** is a lightweight web application that helps users track how long they spend on tasks and save them directly to **Google Calendar**. It’s designed for productivity, study sessions, and motion/time studies, allowing users to log tasks with a title and duration seamlessly.
-
+https://www.timingmotionstudy.com/
 ---
 
 ## 🚀 Features
